@@ -56,7 +56,7 @@
 
             <div class="navbar bg-base-100 bg-bg-primary px-20">
                 <div class="navbar-start">
-                    <div class="dropdown">
+                    <div class="dropdown hidden sm:block ">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -72,8 +72,13 @@
                             <li><a>Contact us</a></li>
                         </ul>
                     </div>
-                    <img src="/Assignment03/images/logo-header.png" alt="">
-                    <a class="btn btn-ghost text-xl">Browser<span class="text-warning">4</span>pets</a>
+                    <div class="flex gap-x-80">
+                        <img src="/Assignment03/images/logo-header.png" alt="">
+                        <i class="fa-solid fa-bars lg:hidden md:hidden"></i>
+                    </div>
+
+
+                    <a class="btn btn-ghost text-xl hidden sm:block">Browser<span class="text-warning">4</span>pets</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -84,7 +89,7 @@
 
                     </ul>
                 </div>
-                <div class="navbar-end gap-x-3">
+                <div class="navbar-end gap-x-3 hidden sm:block justify content ">
                     <i class="fa-regular fa-bell"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <a class="btn btn-outline btn-warning border-warning !text-black">Log In</a>
@@ -98,6 +103,7 @@
 
 
         </nav>
+
 
 
 
